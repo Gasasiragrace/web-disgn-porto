@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="photos/0.PNG" class="logo">
+                <ul>
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About Me</a></li>
+                    <li> <a href="#Gallery">Gallery</a></li>
+                    <li> <a href="#Portofolio">Portofolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Engeneer</p>
+                <h1>hello, Am<span> Grace</span><br> Umwari from ALU</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------about------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photos/4.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>My name is Grace Umwari am 21 i graduated highschool in SOS 2023 in software development i started university last year speptember intake in ALU in software enginering in free time i enjoy sleeping my dream is big but in one word i want to became a biliinaire in sample that's me.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li><span>Software Engineer</span><br>Desgning web</li>
+                            <li><span>Web dev</span><br>Web App Dev</li>
+                            <li><span>App dev</span><br>Buildind Software</li>
+                        </ul>
+                    </div>
+<div class="tab-contents active-tab" id="Experience">
+    <h2>Experience</h2>
+                        <ul>
+                            <li><span>2023</span><br>i worked in harambe as design</li>
+                            <li><span>2024</span><br>i worked on shop</li>
+                            <li><span>2025</span><br>am software developer in CCI</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="Education">
+                        <h2>Education</h2>
+                        <ul>
+                            <li><span>2017-2019</span><br>i was in o-level in Elena Guerra</li>
+                            <li><span>2020-2023</span><br>i was in e-level SOS in sofware development</li>
+                            <li><span>2024</span><br>i started university at ALU</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------gallery----------->
+   <div id="Gallery">
+        <div class="slide">
+            <h1 class="slide">My Gallery</h1>
+            <div class="services-list">
+              <img src="photos/1.jpeg"> 
+              <img src="photos/2.jpeg">
+              <img src="photos/3.jpeg"> 
+              <img src="photos/5.jpeg">
+    
+
+            </div>
+        </div>
+    </div>
+<!---------------portofolio---------->
+<div id="Portofolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="photos/7.jpeg" >
+
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>instagram</p>
+                    
+                    <p>twitter</p>
+                    <p>watsapp</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="photos/4.jpeg" >
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------contact---------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>umgrce@gmail.com</p>
+                <p><i class="fas fa-phone"></i>0791762394</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download Cv</a>
+            </div>
+            
+            <div class="contact-right">
+<form id="myForm">
+  <div class="form-group">
+    <input type="text" id="name" placeholder="Your Name" required>
+  </div>
+  <div class="form-group">
+    <input type="text" id="message" placeholder="Your Message" required>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+
+
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        https://script.google.com/macros/s/AKfycbyk7KK89zrYLxlknEVZAc0cqTS9vh1M7t93S_7egmnSmDP-73alXSgGZ_d8uHsvOVGS1Q/exec
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+    // my tab function (fixed)
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    // Form validation
+    document.getElementById('myForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        let name = document.getElementById('name').value;
+        let message = document.getElementById('message').value;
+        
+        if(name.length < 2) {
+            alert('Name must be at least 2 characters');
+            return;
+        }
+        
+        if(message.length < 10) {
+            alert('Message must be at least 10 characters');
+            return;
+        }
+        
+        alert('Message sent successfully!');
+        document.getElementById('name').value = '';
+        document.getElementById('message').value = '';
+    });
+</script>
+</body>
+</html>
+    
